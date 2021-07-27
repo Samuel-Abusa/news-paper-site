@@ -8,9 +8,6 @@ html {
 }
 body {
   margin: 0 auto;
-  max-width: 100em;
-  min-width: 80em;
-
   background: white;
   font-family: sans-serif;
   display: flex;
@@ -278,7 +275,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  color: ;
+  /* color: ; */
 }
 .latest_news {
   display: flex;
@@ -512,4 +509,112 @@ footer {
 }
 .lin_last:hover {
   color: rgb(194, 194, 194);
+}
+
+.mobile {
+  display: none;
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .search {
+    display: none;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  .image_links {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .img1 {
+    height: 50%;
+  }
+  .img2 {
+    height: 50%;
+  }
+  .img3 {
+    height: 50%;
+  }
+  .lower_img {
+    flex-wrap: wrap;
+    margin: 40px 0 315px 0;
+  }
+  .l {
+    flex-basis: 100%;
+    margin: 1px;
+  }
+
+  .latest_news {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .latest1 {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .norm {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .events1 {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .events1_child {
+    margin-bottom: 30px;
+  }
+
+  .events2 {
+    height: 45vh;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .events3 {
+    height: 45vh;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .editorial {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .the_world_child {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .the_world_child2 {
+    flex-direction: column;
+    height: 55vh;
+    padding: 10px;
+  }
+  .the_world_child2_1 {
+    align-items: center;
+    font-size: 54%;
+  }
+  .the_world_child3 {
+    flex-direction: column;
+    height: 55vh;
+    padding: 10px;
+  }
+  .the_world_child3_1 {
+    align-items: center;
+    font-size: 54%;
+  }
+
+  .last {
+    flex-direction: column;
+  }
+  footer {
+    display: none;
+  }
 }
